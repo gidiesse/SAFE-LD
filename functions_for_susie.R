@@ -131,19 +131,19 @@ compute_power <- function(effect_list, susie_out) {
   
   for (i in seq_along(susie_out)) {
     
+    susie <- susie_out[[i]]
+    
     if (inherits(susie, "try-error")) {
       warning(sprintf("Skipping i = %d due to susie error", i))
-      coverage_num[i] <- 0
-      coverage_den[i] <- 0
+      power_num[i] <- 0
+      power_den[i] <- 0
       next
     }
-    
-    susie <- susie_out[[i]]
     
     cs_sets <- susie$sets$cs
     if (is.null(cs_sets)) {
       power_num[i] <- 0
-      power_den[i] <- length(effect_list)
+      power_den[i] <- length(effect_list[[i]])
       next
     }
     
