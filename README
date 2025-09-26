@@ -1,9 +1,4 @@
-SAFE-LD Functions 
-
-Explanation of the various functions:
-1) create_phenotypes.R - this is where I extract the 20k phenotypes to be used to sample from 
-2) create_phenotypes_with_block_corr_sample_effect.R - this is Claudia's version that creates blocks of correlated phenotypes, I have not used this yet 
-3) internal_and_external_ld.R - this creates my external and internal LD and effect list for the models
-4) prepare_null_LD.R - this creates all my R_simulated (for 5k, 3k, 1k, 50, 10 phenos for 30k individuals and 5k phenos for 5k individuals)
-5) functions_for_susie.R - here are the definitions of all the functions that do Susie + compute the power and coverage
-6) susie_fine_mapping.R - this is the script that actually runs susie in all the different scenarios 
+This git repository contains the scripts used to do simulations and experiments for SAFE-LD.
+`fine_mapping_functions/` contains the functions used to perform fine-mapping using both SAFE-LD and SAFE-LDss.
+`ld_creation_functions/` contains the functions used to create SAFE-LD and SAFE-LDss during experiments.
+`SAFE-LDss.R` is the function that can be used by anyone to create SAFE-LD from summary statistics
