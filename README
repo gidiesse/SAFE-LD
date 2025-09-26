@@ -1,14 +1,10 @@
 # SAFE-LD
-
 This repository contains the scripts used to run simulations and experiments for **SAFE-LD**.
 
 ## Repository Structure
 
-- `fine_mapping_functions/`  
-  Contains the functions used to perform fine-mapping using both SAFE-LD and SAFE-LDss.
+- `fine_mapping_functions/` contains the functions used to perform fine-mapping with both SAFE-LD and SAFE-LDss.
 
-- `ld_creation_functions/`  
-  Contains the functions used to create SAFE-LD and SAFE-LDss during experiments.
+- `ld_creation_functions/` contains the functions used to create SAFE-LD and SAFE-LDss during experiments.
 
-- `SAFE-LDss.R`  
-  Main function that can be used by anyone to create SAFE-LD from summary statistics.
+-`SAFE-LDss.R` is the function that can be used by anyone to create SAFE-LD from summary statistics. 
